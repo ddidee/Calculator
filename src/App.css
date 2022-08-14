@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f3;
+    font-family: sans-serif;
+}
+.App{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+    width: 25%;
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                      5px 5px 12px rgba(0, 0, 0, 0.16);
+    
+}
+.Input{
+    height: 15%;
+    width: 95%;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 30px;
+    font: xx-large bold;
+    text-align: end;
+    margin: 30px auto;
+    padding: 0 10px;
+}
+.Buttons{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+.CharacterEquals{
+    /* grid-column: span 2; */
+    text-align: center;
+    width: 50%;
+    padding: 0 20px;
+    border-radius: 40px;
+}
+.Character , .Number, .CharacterEquals{
+    height: 50px;
+    width: 50px;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                      5px 5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    background-color: #ecf0f3;
+    margin: 8px;
+    font-size:  x-large;
+    border-radius: 40%;
+}
+
+@media screen and (max-width: 950px){
+    .Calculator{
+        
+        height: 60%;
+        width: 68%;
+    }
+    .Character , .Number, .CharacterEquals{
+        height: 70px;
+        width: 70px;
+        margin: 10px;
+        font-size:  xx-large;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .Calculator{
+        
+        height: 80%;
+        width: 75%;
+    }
+    .Input{
+        height: 15%;
+    }
+    .Character , .Number, .CharacterEquals{
+        height: 60px;
+        width: 60px;
+        margin: 10px;
+        font-size:  x-large;
+    }
+}
+
+
+
+@media screen and (max-width: 400px){
+    .Calculator{
+        
+        height: 78%;
+        width: 75%;
+    }
+    .Input{
+        height: 15%;
+    }
+    .Character , .Number, .CharacterEquals{
+        height: 48px;
+        width: 50px;
+        margin: 10px;
+        font-size:  larger;
+    }
+}
+
